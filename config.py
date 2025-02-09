@@ -1,0 +1,3 @@
+INFLUXDB_HOST = "localhost"
+INFLUXDB_PORT = 8086
+INFLUXDB_DB = "gsr_data"

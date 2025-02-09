@@ -1,6 +1,6 @@
 # GSR-Sensor-Datenaufzeichnung mit InfluxDB auf Grafana (Option Docker / Webdesk mit flusk)
 
-Dieses Python-Projekt misst die **Hautleitfähigkeit (GSR - Galvanic Skin Response)** mit einem Grove GSR-Sensor und speichert die Daten in **InfluxDB**. Die Messungen können über ein einfaches CLI-Menü gestartet und verwaltet werden.
+Dieses Python-Projekt misst die Hautleitfähigkeit (GSR - Galvanic Skin Response) mit einem Grove GSR-Sensor und speichert die Daten in InfluxDB. Die Messungen können über ein einfaches CLI-Menü gestartet und verwaltet werden.Die Messdaten werden von influxDB an einen grafana web client übergeben und in Echtzeit dargestellt. 
 
 ---
 
@@ -58,8 +58,9 @@ python gsr_sensor.py
 
 CLI-Menü
 
-Das Programm startet mit einem Hauptmenü, in dem du: 1️⃣ Eine neue Messung starten kannst
-2️⃣ Das Programm beenden kannst
+Das Programm startet mit einem Hauptmenü, in dem du:
+1. Eine neue Messung starten kannst
+2. Das Programm beenden kannst
 
 Beispiel-Eingabe:
 
@@ -75,7 +76,7 @@ Daten in InfluxDB anzeigen
 
 Öffne die InfluxDB CLI:
 
-influx
+%influx
 
 Zeige die letzten Messwerte an:
 

@@ -1,11 +1,4 @@
-### **💡 Warum ist diese `README.md` gut?**
-✅ **Erklärt den Zweck des Projekts**  
-✅ **Gibt klare Installationsanweisungen für Python & InfluxDB**  
-✅ **Zeigt, wie das CLI-Menü funktioniert**  
-✅ **Erklärt, wie man die Daten in InfluxDB abfragt**  
-
-
-# GSR-Sensor-Datenaufzeichnung mit InfluxDB
+# GSR-Sensor-Datenaufzeichnung mit InfluxDB auf Grafana (Option Docker / Webdesk mit flusk)
 
 Dieses Python-Projekt misst die **Hautleitfähigkeit (GSR - Galvanic Skin Response)** mit einem Grove GSR-Sensor und speichert die Daten in **InfluxDB**. Die Messungen können über ein einfaches CLI-Menü gestartet und verwaltet werden.
 

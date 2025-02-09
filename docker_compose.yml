@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  influxdb:
+    image: influxdb:latest
+    container_name: influxdb
+    restart: always
+    ports:
+      - "8086:8086"
+    environment:
+      - INFLUXDB_DB=gsr_data
+    volumes:
+      - influxdb_data:/var/lib/influxdb
+
+  gsr_sensor:
+    build: .
+    container_name: gsr_sensor
+    restart: always
+    depends_on:
+      - influxdb
+
+  web:
+    build: ./web
+    container_name: gsr_web
+    restart: always
+    depends_on:
+      - influxdb
+    ports:
+      - "5000:5000"
+
+volumes:
+  influxdb_data:
